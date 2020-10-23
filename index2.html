@@ -1,44 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>日本ALO音楽研究所</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="styles/style2.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 </head>
 
-
-
 <body>
     <!-- ここからmain-wrapper -->
     <div class="main-wrapper">
-
         <!-- ここからheader -->
-        <header>
+        <header id="header">
             <div class="header">
                 <div class="header-contents">
-                    <h1 class="noto">日本ALO音楽研究所</h1>
+                    <h1 class="header-logo noto"><a>日本ALO音楽研究所</a></h1>
                     <div class="header-contact-info">
-                        <div class="header-tel title">
-                            <div class="tel-txt">TEL</div>
-                            <div class="tel-number">0120-50-6663</div>
+                        <div class="header-tel">
+                            <div class="tel-txt lato">TEL</div>
+                            <div class="tel-number noto">0120-00-0000</div>
+                            <img src="images/mobile_tel_icon.png" alt="tel-icon">
                         </div>
                         <div class="header-day">10:00～18:00 土日・祝日・年末年始除く</div>
                     </div>
                     <a href="#contact" class="btn">
                         <div class="header-contact">お問い合わせ</div>
+                        <img src="images/mobile_mail_icon.png" alt="mail-icon">
                     </a>
-                    <div class="menu">
-                        <div class="menu-txt title">MENU</div>
-                        <div class="menu-line">
-                            <div class="line-top"></div>
-                            <div class="line-under"></div>
-                        </div>
-                    </div>
+                    <button class="header-ham" id="hamburger">
+                        <span class="lato">MENU</span>
+                        <i></i>
+                    </button>
                 </div>
             </div>
         </header>
@@ -50,17 +47,17 @@
                 日本ALO音楽研究所
             </div>
             <div class="image">
-                <img src="css/top_image.png" alt="ALO">
+                <img src="images/top_image.png" alt="ALO">
                 <div class="clearblack-bg"></div>
                 <div class="black-bg"></div>
             </div>
             <div class="inner">
                 <div class="inner-top noto">日本ALO音楽研究所</div>
                 <div class="inner-title">
-                    <img src="css/inner_title.png" alt="ALO">
+                    <img src="images/inner_title.png" alt="ALO">
                 </div>
                 <div class="inner-subtitle noto">この文章はダミーです。</div>
-                <div class="inner-copy title">
+                <div class="inner-copy lato">
                     ANIMAL LIBERATION ORCHESTRA
                 </div>
                 <div class="top-inner-txt">
@@ -71,31 +68,37 @@
                     </p>
                 </div>
             </div>
+            <div class="scroll">
+                <span class="scroll-txt aktiv">SCROLL DOWN</span>
+                <i class="scroll-icon"></i>
+            </div>
         </div>
         <!-- ここからcontents -->
         <div class="contents">
 
             <!-- ここからabout -->
-            <section class="about">
+            <section class="about" id="about">
                 <div class="about-contents">
                         <div class="about-left">
-                            <div class="title">
-                                <h2>ABOUT</h2>
-                                <div>ABOUT ALO [ ANIMAL LIBERATION ORCHESTRA ]</div>
+                            <div class="about-left-top inview">
+                                <div class="title">
+                                    <h2 class="lato">ABOUT</h2>
+                                    <div class="left-bar lato">ABOUT ALO [ ANIMAL LIBERATION ORCHESTRA ]</div>
+                                </div>
+                                <div class="about-paragraph inview">
+                                    <h3 class="noto">
+                                        この文章はダミーです。
+                                        <br>
+                                        文字の大きさ、量、字間、
+                                        <br>
+                                        行間等を確認するために
+                                        <br>
+                                        入れています。
+                                    </h3>
+                                </div>
                             </div>
-                            <div class="about-paragraph noto">
-                                <h3>
-                                    この文章はダミーです。
-                                    <br>
-                                    文字の大きさ、量、字間、
-                                    <br>
-                                    行間等を確認するために
-                                    <br>
-                                    入れています。
-                                </h3>
-                            </div>
-                            <div class="about-paragraph-txt noto">
-                                <p>
+                            <div class="about-paragraph-txt inview">
+                                <p class="noto">
                                     この文章はダミーです。文字の大きさ、量、字間、行間等を確認
                                     <br>
                                     するために入れています。この文章はダミーです。文字の大き
@@ -104,9 +107,9 @@
                                 </p>
                             </div>
 
-                            <div class="about-left-bottom noto">
-                                <div class="about-paragraph">
-                                    <h3>
+                            <div class="about-left-bottom">
+                                <div class="about-paragraph inview">
+                                    <h3 class="noto">
                                         この文章はダミーです。文字の大きさ、
                                         <br>
                                         量、字間、行間等を確認するために
@@ -114,8 +117,8 @@
                                         入れています。
                                     </h3>
                                 </div>
-                                <div class="about-paragraph-txt">
-                                    <p>
+                                <div class="about-paragraph-txt inview">
+                                    <p class="noto">
                                         この文章はダミーです。文字の大きさ、量、字間、行間等を確認
                                         <br>
                                         するために入れています。
@@ -125,17 +128,18 @@
                         </div>
 
                         <div class="about-right">
-                            <div class="about-model">
-                                <img src="css/about_model.png" alt="">
+                            <div class="about-model inview">
+                                <img src="images/about_model.png" alt="">
                             </div>
 
                             <div class="about-right-bottom">
-                                <div class="about-right-title title">
-                                    <h2>ALO</h2>
-                                    <p>ANIMAL LIBERATION ORCHESTRA</p>
+                                <div class="about-right-title inview">
+                                    <h2 class="lato">ALO</h2>
+                                    <div class="left-bar lato">ANIMAL LIBERATION ORCHESTRA</div>
                                 </div>
-                                <div class="about-right-txt">
-                                    <p>
+                                <div class="under-line"></div>
+                                <div class="about-right-txt inview">
+                                    <p class="lato">
                                         この文章はダミーです。文字の大きさ、量、字間、
                                         <br>
                                         行間等を確認するために入れています。
@@ -143,24 +147,24 @@
                                 </div>
                             </div>
                             
-                            <div class="about-chair">
-                                <img src="css/about_chair.png" alt="椅子の写真">
+                            <div class="about-chair inview">
+                                <img src="images/about_chair.png" alt="椅子の写真">
                             </div>
                         </div>
                 </div>
 
                 <div class="about-bottom">
-                    <div class="about-graph">
-                        <img src="css/about_graph.png" alt="">
+                    <div class="about-graph inview">
+                        <img src="images/about_graph.png" alt="">
                     </div>
 
-                    <div class="about-bottom-paragraph noto">
-                        <h3>
+                    <div class="about-bottom-paragraph inview">
+                        <h3 class="noto">
                             この文章はダミーです。
                             <br>
                             文字の大きさ、量、字間を確認するため
                         </h3>
-                        <p>
+                        <p class="noto">
                             この文章はダミーです。文字の大きさ、量、字間、行間等を確認
                             <br>
                             するために入れています。この文章はダミーです。文字の大き
@@ -170,32 +174,33 @@
                     </div>
                 </div>
             </section>
+            <!-- ここまでabout -->
 
-            <section class="product">
-                <div class="product-bg">
-                    <div class="product-top">
+            <!-- ここからproduct -->
+            <section class="product" id="product">    
+                    <div class="product-top inview">
                         <div class="title">
-                            <h2>PRODUCT</h2>
-                            <div>PRODUCT INFORMATION</div>
+                            <h2 class="lato">PRODUCT</h2>
+                            <div class="left-bar lato">PRODUCT INFORMATION</div>
                         </div>
                         <div class="product-paragraph noto">
-                            <h3>この文章はダミーです。</h3>
-                            <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+                            <h3 class="noto">この文章はダミーです。</h3>
+                            <p class="noto">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
                         </div>
                     </div>
 
                     <div class="product-contents">
-                        <div class="product1">
+                        <div class="product1 cursor inview">
                             <div class="product-image">
-                                <a href=""><img src="css/product1.png" alt="家の写真"></a>
+                                <img src="images/product1.png" alt="家の写真">
                             </div>
                             <div class="product-info">
                                 <div class="product-detail">
                                     <div class="product-name noto">ダミーダミーダミー</div>
                                     <div class="product-view">
-                                        <div class="product-view-more title">VIEW MORE</div>
-                                        <div class="view-icon">
-                                            <img src="css/view_icon.png" alt="">
+                                        <div class="product-view-more lato">VIEW MORE</div>
+                                        <div class="view-icon" id="product-pop">
+                                            <img src="images/view_icon.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -209,18 +214,18 @@
                             </div>
                         </div>
 
-                        <div class="product2">
+                        <div class="product2 cursor inview">
                             <div class="product-image">
-                                <a href=""><img src="css/product2.png" alt="家の写真"></a>
+                                <img src="images/product2.png" alt="家の写真">
                             </div>
 
                             <div class="product-info">
                                 <div class="product-detail">
                                     <div class="product-name noto">ダミーダミーダミー</div>
                                     <div class="product-view">
-                                        <div class="product-view-more title">VIEW MORE</div>
-                                        <div class="view-icon">
-                                            <img src="css/view_icon.png" alt="">
+                                        <div class="product-view-more lato">VIEW MORE</div>
+                                        <div class="view-icon" id="product-pop">
+                                            <img src="images/view_icon.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -234,18 +239,18 @@
                             </div>
                         </div>
 
-                        <div class="product3">
+                        <div class="product3 cursor inview">
                             <div class="product-image">
-                                <a href=""><img src="css/product3.png" alt="家の写真"></a>
+                                <img src="images/product3.png" alt="家の写真">
                             </div>
 
                             <div class="product-info">
                                 <div class="product-detail">
                                     <div class="product-name noto">ダミーダミーダミー</div>
                                     <div class="product-view">
-                                        <div class="product-view-more title">VIEW MORE</div>
-                                        <div class="view-icon">
-                                            <img src="css/view_icon.png" alt="">
+                                        <div class="product-view-more lato">VIEW MORE</div>
+                                        <div class="view-icon" id="product-pop">
+                                            <img src="images/view_icon.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -259,18 +264,18 @@
                             </div>
                         </div>
 
-                        <div class="product4">
+                        <div class="product4 cursor inview">
                             <div class="product-image">
-                                <a href=""><img src="css/product4.png" alt="家の写真"></a>
+                                <img src="images/product4.png" alt="家の写真">
                             </div>
 
                             <div class="product-info">
                                 <div class="product-detail">
                                     <div class="product-name noto">ダミーダミーダミー</div>
                                     <div class="product-view">
-                                        <div class="product-view-more title">VIEW MORE</div>
-                                        <div class="view-icon">
-                                            <img src="css/view_icon.png" alt="">
+                                        <div class="product-view-more lato">VIEW MORE</div>
+                                        <div class="view-icon" id="product-pop">
+                                            <img src="images/view_icon.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -285,49 +290,236 @@
                         </div>
 
                     </div>
-                </div>
             </section>
+            <!-- ここまでproduct -->
 
-            <div class="house-image">
-                <img src="css/house_image.png" alt="家の写真">
+            <!-- ここからhouse-image -->
+            <div class="house-image inview">
+                <img src="images/house_image.png" alt="家の写真">
             </div>
+            <!-- ここまでhouse-image -->
 
+            <!-- ここからcontact -->
             <section class="contact" id="contact">
-                <div class="contact-inner">
-                    <div class="contact-txt noto">
-                        <div>お電話でのお問い合わせはこちら</div>
+                <div class="contact-inner inview">
+                    <div class="contact-txt">
+                        <div class="noto">お電話でのお問い合わせはこちら</div>
                     </div>
                 
                     <div class="contact-info">
                         <div class="contact-tel-icon">
-                            <img src="css/tel_icon.png" alt="電話アイコン">
+                            <img src="images/tel_icon.png" alt="電話アイコン">
                         </div>
                         <div class="contact-tel">
-                            <div class="tel-number title">0120-00-0000</div>
+                            <div class="tel-number lato">0120-00-0000</div>
                             <div class="conact-day noto">10:00～18:00 土日・祝日・年末年始除く</div>
                         </div>
                     </div>
                     <div class="pagetop">
-                        <div class="pagetop-icon">^</div>
-                        <div class="pagetop-txt title">PAGE TOP</div>
+                        <a href="#header"><div class="pagetop-icon">^</div></a>
+                        <a href="#header"><div class="pagetop-txt lato">PAGE TOP</div></a>
                     </div>
                 </div>
             </section>
+            <!-- ここまでcontact -->
         </div>
         <!-- ここまでcontents -->
 
         <!-- ここからfooter -->
         <footer>
             <div class="footer">
-                <nav class="footer-nav noto">
-                    <a href="">企業案内</a>
-                    <a href="" class="policy">プライバシーポリシー</a>
+                <nav class="footer-nav">
+                    <a href="#" class="noto">企業案内</a>
+                    <a href="#" class="policy noto">プライバシーポリシー</a>
                 </nav>
             </div>
-            <div class="footer-copy title">© COMPANY</div>
+            <div class="footer-copy lato">© COMPANY</div>
         </footer>
         <!-- ここまでfooter -->
+
+        <!-- ここからmenu -->
+        <div class="menu" id="menu">
+            <div class="menu-close" id="hamburger-close">
+                <i></i>
+            </div>
+            <div class="menu-inner">
+                <div class="menu-top">
+                    <div class="menu-title noto">日本ALO音楽研究所</div>
+                    <div class="mobile-menu">
+                        <nav class="menu-bottom-right">
+                            <ul>
+                                <li class="list noto"><a href="#about">ALOについて</a></li>
+                                <li class="list noto"><a href="#product">ALOの強み</a></li>
+                                <li class="list noto"><a href="#product">ALOの商品紹介</a></li>
+                                <li class="list noto"><a href="#product">ご加盟までの流れ</a></li>
+                                <li class="list noto"><a href="#product">よくあるご質問</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="menu-bottom">
+                    <div class="menu-bottom-left">
+                        <div class="menu-mail">
+                            <div class="mail-txt-icon">
+                                <div>
+                                    <img src="images/mail_icon.png" alt="メールアイコン">
+                                </div>
+                                <div class="mail-txt">メールでのお問い合わせ</div>
+                            </div>
+                            <a href="#contact" class="link">
+                                <div class="header-contact">
+                                    お問い合わせ
+                                </div>
+                            </a>
+                        </div>
+                        <div class="menu-tel">
+                            <div class="tel-txt-icon">
+                                <img src="images/tel_icon.png" alt="電話アイコン">
+                                <div class="tel-txt">お電話でのお問い合わせ</div>
+                            </div>
+                            <div class="menu-open">
+                                <div class="lato">0120-00-0000</div>
+                                <div class="noto">10:00～18:00 土日・祝日・年末年始除く</div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="menu-bottom-right">
+                        <ul>
+                            <li class="list noto"><a href="#about">ALOについて</a></li>
+                            <li class="list noto"><a href="#">ALOの強み</a></li>
+                            <li class="list noto"><a href="#product">ALOの商品紹介</a></li>
+                            <li class="list noto"><a href="#">ご加盟までの流れ</a></li>
+                            <li class="list noto"><a href="#">よくあるご質問</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- ここまでmenu -->
+
+        <!-- ここからオーバーレイ -->
+        <div class="overlay" id="overlay">
+            <div class="overlay-close" id="product-pop-close">
+                <i></i>
+            </div>
+            <div class="overlay-inner">
+                <div class="overlay-left">
+                    <div class="mobile-overlay">
+                        <div class="overlay-img">
+                            <img src="images/description_image1.png" alt="">
+                        </div>
+                        <div class="overlay-buttons">
+                            <div class="button-left">＜</div>
+                            <div class="button-num">1/4</div>
+                            <div class="button-left">＞</div>
+                        </div>
+                    </div>
+                    <div class="overlay-description">
+                        <div class="description-name noto">ダミーダミーダミー</div>
+                        <div class="description-spec lato">SPEC</div>
+                        <div class="description-spec-txt noto">
+                            この文章はダミーです。文字の大きさ、量、字間、行間
+                            等を確認するために入れています。
+                        </div>
+                        <div class="description-product noto">
+                            この文章はダミーです。文字の大きさ、量、字
+                            間、行間等を確認するために入れています。こ
+                            の文章はダミーです。文字の大きさ、量、字
+                            間、行間等を確認するために入れています。こ
+                            の文章はダミーです。文字の大きさ、量、字間、行
+                            間等を確認するために入れています。
+                        </div>
+                        <div class="description-other lato">
+                            OTHER IMAGES
+                        </div>
+                    </div>
+                    <div class="overlay-buttons2">
+                        <div class="button-left">＜</div>
+                        <div class="button-num">1/8</div>
+                        <div class="button-left">＞</div>
+                    </div>
+                    <div class="overlay-imgs">
+                        <img src="images/description_images1.png" alt="">
+                        <img src="images/description_images.png" alt="">
+                        <img src="images/description_images.png" alt="">
+                        <img src="images/description_images.png" alt="">
+                    </div>
+                </div>
+                <div class="overlay-right">
+                    <div class="overlay-img">
+                        <img src="images/description_image1.png" alt="">
+                    </div>
+                    <div class="overlay-buttons">
+                        <div class="button-left">＜</div>
+                        <div class="button-num">1/4</div>
+                        <div class="button-left">＞</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="overlay-inner">
+                <div class="overlay-left">
+                    <div class="mobile-overlay">
+                        <div class="overlay-img">
+                            <img src="images/product1.png" alt="">
+                        </div>
+                        <div class="overlay-buttons lato">
+                            <div class="button-left">＜</div>
+                            <div class="button-num">1/4</div>
+                            <div class="button-left">＞</div>
+                        </div>
+                    </div>
+                    <div class="overlay-description">
+                        <div class="description-name">ダミーダミーダミー</div>
+                        <div class="description-spec">SPEC</div>
+                        <div class="description-spec-txt">
+                            この文章はダミーです。文字の大きさ、量、字間、行間
+                            等を確認するために入れています。
+                        </div>
+                        <div class="description-product">
+                            この文章はダミーです。文字の大きさ、量、字
+                            間、行間等を確認するために入れています。こ
+                            の文章はダミーです。文字の大きさ、量、字
+                            間、行間等を確認するために入れています。こ
+                            の文章はダミーです。文字の大きさ、量、字間、行
+                            間等を確認するために入れています。
+                        </div>
+                        <div class="description-other">
+                            OTHER IMAGES
+                        </div>
+                    </div>
+                    <div class="overlay-buttons2 lato">
+                        <div class="button-left">＜</div>
+                        <div class="button-num">1/8</div>
+                        <div class="button-left">＞</div>
+                    </div>
+                    <div class="overlay-imgs">
+                        <img src="images/description_images1.png" alt="">
+                        <img src="images/description_images.png" alt="">
+                        <img src="images/description_images.png" alt="">
+                        <img src="images/description_images.png" alt="">
+                    </div>
+                </div>
+                <div class="overlay-right">
+                    <div class="overlay-img">
+                        <img src="images/product2.png" alt="">
+                    </div>
+                    <div class="overlay-buttons lato">
+                        <div class="button-left">＜</div>
+                        <div class="button-num">1/4</div>
+                        <div class="button-left">＞</div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <!-- ここまでオーバーレイ -->
     </div>
     <!-- ここまでmain-wrapper -->
+
+    <!-- ここからjs -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
